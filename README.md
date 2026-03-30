@@ -123,7 +123,14 @@ cp bios_2_81_8mb_1.bin bios_2_81_8mb_backup.bin
 
 ```bash
 ```
+
 https://github.com/thrimbor/thinkpad-uefi-sign
+
+flashrom
+UEFIPatch
+thinkpad-uefi-sign
+
+
 Записываем биос обратно(4мб)
 ```bash
 sudo flashrom -p ch341a_spi -w bios_2_81_4mb_patched.bin
