@@ -4,7 +4,7 @@
 
 ### Утилита модификации UEFI BIOS.
 
-[UEFITool на github.com](https://github.com/LongSoft/UEFITool)
+Для модификации потребуется утилита [UEFIPatch из пакета UEFITool(github.com)](https://github.com/LongSoft/UEFITool)
 
 Для полноценной модификации (редактирования) BIOS необходимо использовать последнюю доступную версию без пометки NE (New Engine). На момент написания это была версия 0.28.0.
 
