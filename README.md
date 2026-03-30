@@ -11,3 +11,13 @@
 wget https://github.com/LongSoft/UEFITool/releases/download/0.28.0/UEFIPatch_0.28.0_linux_x86_64.zip
 ```
 
+Разархивируем:
+```bash
+unzip UEFIPatch_0.28.0_linux_x86_64.zip
+```
+
+Делаем файл UEFIPatch исполняемым:
+```bash
+chmod +x UEFIPatch
+```
+
