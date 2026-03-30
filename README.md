@@ -122,6 +122,8 @@ cp bios_2_81_8mb_1.bin bios_2_81_8mb_backup.bin
 ```
 
 ```bash
+pip install pycryptodome --break-system-packages
+python3 -c "import Crypto; print(Crypto.__version__)"
 ```
 
 https://github.com/thrimbor/thinkpad-uefi-sign
