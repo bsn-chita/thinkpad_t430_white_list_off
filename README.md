@@ -2,27 +2,49 @@
 
 ## Подготовительный этап
 
+Создадим каталог для работы
+```bash
+mkdir ~/UEFI
+```
+
+Перейдем в него
+```bash
+cd ~/UEFI
+```
+
 ### Утилита модификации UEFI BIOS.
 
-Для модификации потребуется утилита [UEFIPatch из пакета UEFITool(github.com)](https://github.com/LongSoft/UEFITool)
+Для модификации потребуется утилита [UEFIPatch из пакета UEFITool(github.com)](https://github.com/LongSoft/UEFITool). При чем необходимо использовать последнюю доступную версию без пометки NE (New Engine). На момент написания это была версия 0.28.0.
 
-Для полноценной модификации (редактирования) BIOS необходимо использовать последнюю доступную версию без пометки NE (New Engine). На момент написания это была версия 0.28.0.
-
-Копируем на компьютер утилиту UEFIPatch:
-
+Создадим для UEFIPatch свой каталог
+```bash
+mkdir UEFIPatch_0_28_0
+```
+Перейдем в него и скопируем в него архив с UEFIPatch
 ```bash
 wget https://github.com/LongSoft/UEFITool/releases/download/0.28.0/UEFIPatch_0.28.0_linux_x86_64.zip
 ```
 
-Разархивируем:
+Разархивируем содержимое архива:
 ```bash
 unzip UEFIPatch_0.28.0_linux_x86_64.zip
 ```
 
-Делаем файл UEFIPatch исполняемым:
+И сделаем файл UEFIPatch исполняемым:
 ```bash
 chmod +x UEFIPatch
 ```
+
+Созданим файл модификатор для UEFIPatch
+```bash
+echo "79E0EDD7-9D1D-4F41-AE1A-F59E9B451396 10 P:410084C0751032C0:410084C0EB1032C0" > patches_thinkpad_t430.txt
+```
+Важно чтобы в конце файла была пустая строка.
+
+
+
+
+
 
 ## Backup BIOS с помощью программатора
 
@@ -50,11 +72,7 @@ cp bios_2_81_8mb_1.bin bios_2_81_8mb_backup.bin
 дописать получение полного при чем порядок влияет
 ```
 
-создание файла модификатора для UEFIPatch
-```bash
-echo "79E0EDD7-9D1D-4F41-AE1A-F59E9B451396 10 P:410084C0751032C0:410084C0EB1032C0" > patches_thinkpad_t430.txt
-```
-Важно чтобы в конце файла была пустая строка.
+
 
 
 ```bash
