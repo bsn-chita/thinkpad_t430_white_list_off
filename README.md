@@ -11,7 +11,17 @@ unzip UEFIPatch_0.28.0_linux_x86_64.zip
 chmod +x UEFIPatch
 ```
 
+3. Использование
 
+Для работы утилиты в одной папке с ней должны находиться:
+- исполняемый файл UEFIPatch.
+- дамп BIOS
+- файл со списком патчей patches.txt
+
+4. Команда для установки патча
+```bash
+./UEFIPatch bios_backup.bin patches.txt -o patched_bios.bin
+```
 
 
 
