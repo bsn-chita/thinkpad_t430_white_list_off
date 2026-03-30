@@ -1,3 +1,23 @@
+1. Скачайте архив:
+Перейдите на официальную страницу релизов [LongSoft/UEFITool Releases ](https://github.com/LongSoft/UEFITool/releases) и выберите файл UEFIPatch_0.28.0_linux_x86_64.zip.
+```bash
+wget https://github.com/LongSoft/UEFITool/releases/download/0.28.0/UEFIPatch_0.28.0_linux_x86_64.zip
+```
+2. Распакуйте и подготовьте файл:
+```bash
+unzip UEFIPatch_0.28.0_linux_x86_64.zip
+chmod +x UEFIPatch
+```
+
+
+
+
+
+
+
+
+
+
 # Удаление белого списка оборудования на ноутбуке Thinkpad T430.
 
 ## Подготовительный этап
@@ -40,11 +60,6 @@ chmod +x UEFIPatch
 echo "79E0EDD7-9D1D-4F41-AE1A-F59E9B451396 10 P:410084C0751032C0:410084C0EB1032C0" > patches_thinkpad_t430.txt
 ```
 Важно чтобы в конце файла была пустая строка.
-
-
-
-
-
 
 ## Backup BIOS с помощью программатора
 
