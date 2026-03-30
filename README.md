@@ -1,9 +1,11 @@
 1. Скачайте архив:
+
 Перейдите на официальную страницу релизов [LongSoft/UEFITool Releases ](https://github.com/LongSoft/UEFITool/releases) и выберите файл UEFIPatch_0.28.0_linux_x86_64.zip.
 ```bash
 wget https://github.com/LongSoft/UEFITool/releases/download/0.28.0/UEFIPatch_0.28.0_linux_x86_64.zip
 ```
 2. Распакуйте и подготовьте файл:
+
 ```bash
 unzip UEFIPatch_0.28.0_linux_x86_64.zip
 chmod +x UEFIPatch
